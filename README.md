@@ -1,5 +1,5 @@
 # ToyotaOdometer-79c36-Program
-Reprogram the 79C36 EEPROM to fix an odometer on a Toyota Matrix
+Reprogram the 79C36 EEPROM to fix an odometer on a Toyota Matrix using an ESP32 in Arduino (should work fine with a 3.3V Arduino device as well, and possibly a 5V Arduino, but I do not know. Without looking into it, I would say that there is risk of damage if using a 5V device. (I now wish I had measured the voltage when it was connected in the car)
 
 ## My 2003 Toyota Matrix odometer hit 299999km, and for reasons I cannot comprehend, they stop there. I wrote this quickly to reset it to zero(ish).
 I got the basics from here: https://youtu.be/8wygJwWnFm4
