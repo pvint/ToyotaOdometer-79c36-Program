@@ -9,7 +9,7 @@ I got the basics from here: https://youtu.be/8wygJwWnFm4
 ### Summary:
 Due to a bug in some Toyota vehicles (and related ones, such as the Pontiac Vibe), the odometer stops at 299999 (here in Canada, it was at 299999km, but from what I have read, the same thing happens at 299999 miles in the US).
 
-When I read the EEPROM on mine, it showed that the mileage was still being counted in the 74C36 EEPROM (I could see that mine was at 300040 or so), but it still only showed 299999 on the display. Note that the video I linked to above, and other discussions I have seen found the same thing as me - that all of the digits are easy to read/write except the ones digit. I did a bit of experimenting with it but was unable to figure it out in a reasonable amount of time, and discarded it as unimportant.
+When I read the EEPROM on mine, it showed that the mileage was still being counted in the 93C46 EEPROM (I could see that mine was at 300040 or so), but it still only showed 299999 on the display. Note that the video I linked to above, and other discussions I have seen found the same thing as me - that all of the digits are easy to read/write except the ones digit. I did a bit of experimenting with it but was unable to figure it out in a reasonable amount of time, and discarded it as unimportant.
 
 ### Before:
 ![Odo299999](https://user-images.githubusercontent.com/608740/161405113-106e5c41-9eb8-4635-8669-a66ffab16d9e.jpg)
