@@ -23,8 +23,9 @@ This requires an ESP32 devkit of some sort, and uses this library: https://githu
 
 To program it, I took out the instrument cluster and the black plastic panel off of the back of it, which revealed the 74C36 EEPROM (the only 8 pin DIP package on mine). I was planning to remove it and put a socket in, but getting at the back of the board was looking to be harder than I hoped, so I simply soldered some dupont wires onto the chip:
  ![IMG_20220402_164955](https://user-images.githubusercontent.com/608740/161405314-f7f973ae-b682-48bd-97fd-8dafed1c78e6.jpg)
- 
+ ![IMG_20220402_164934](https://user-images.githubusercontent.com/608740/161405573-add54ec6-532c-4ed8-b6f8-928cde41552a.jpg)
+
  See the arduino program for the pinout for the serial wires, ground and power are pins 5 and 8 respectively.
 In the sketch, make sure that `bool doWrite = false;` is indeed set to `false` for testing. Once things are connected and you can read the device, you can set the desired odometer reading with `char newOdometer[] = "00000";` noting that it does not include the last digit (the "ones" digit).
 
-
+Also not that this code was a very quick hack - I doubt that my little car will make it another 300000km, so I likely won't use it again, but I thought it good to document it at least a bit! Good luck, and don't brick your car. ;)
